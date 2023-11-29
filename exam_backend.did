@@ -1,0 +1,11 @@
+type Exam = {
+  field1: Text;
+  field2: Nat;
+  // Gerekirse daha fazla alan ekleyin.
+};
+
+service : {
+  // Diğer mevcut yöntemler...
+
+  update_exam : (key: Nat, new_exam_details: Exam) -> (opt Exam);
+};
